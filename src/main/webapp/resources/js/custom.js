@@ -227,6 +227,7 @@ $(function() {
 	$btnElimiarTodos.click(function(){
 		
 		hayConflicto = false;
+		$itinerario.attr("checked", false);
 		limpiarVista();
 		limpiarTabla();		
 		limpiarJava();	

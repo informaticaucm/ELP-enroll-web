@@ -3,6 +3,10 @@ body {
 	background-color: #E0E0E0;
 }
 
+#contenedorGlobal{
+	margin: 15px;
+}
+
 ul {
 	margin-top: 10px;
 	padding-left: 0px;
@@ -17,7 +21,7 @@ li.active {
 	background-color: #97b8cc;
 }
 
-div .seccion{
+div .seccion, div#botonera{
 	border: 2px solid #263F4E;
 	border-radius: 10px;
 }

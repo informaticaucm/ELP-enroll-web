@@ -10,7 +10,7 @@
 	
 	<body>
 		
-		<div class="row">
+		<div id="contenedorGlobal" class="row">
 		
 			<div class="col-xs-5">
 			
@@ -107,28 +107,50 @@
 				</div>
 			
 				<div id="contenedor" class="row">
-				
-					<div class="col-xs-4 seccion">
+					
+					<div class="col-xs-8">
+					
+						<div class="row">
 						
-						<h4>Curso</h4>
+							<div class="col-xs-6 seccion">
+							
+								<h4>Curso</h4>
+							
+								<ul id="curso">
+									<c:forEach var="curso" items="${cursos}">
+									    <li>${curso}</li>
+									</c:forEach>
+								</ul>					
+							
+							</div>
+						
+							<div class="col-xs-6 seccion">					
+							
+								<h4>Grupo</h4>
+							
+								<ul id="grupo">
+		<!-- 							contenido añadido con JQuery -->
+								</ul>	
+							
+							</div>						
+						
+						</div>
 					
-						<ul id="curso">
-							<c:forEach var="curso" items="${cursos}">
-							    <li>${curso}</li>
-							</c:forEach>
-						</ul>					
+						<div id="botonera" class="row">
+					
+							<div class="col-xs-12 text-center">
+							
+								<button id="btnAniadir" type="button" class="btn btn-default">Añadir</button>
+								<button id="btnEliminar" type="button" class="btn btn-default">Eliminar</button>
+								<button id="btnEliminarTodos" type="button" class="btn btn-default">Eliminar todas</button>
+								<button id="btnExportar" type="button" class="btn btn-default">Exportar calendario</button>
+								
+					 		</div>
+					 		
+						</div>	
 					
 					</div>
 					
-					<div class="col-xs-4 seccion">					
-					
-						<h4>Grupo</h4>
-					
-						<ul id="grupo">
-<!-- 							contenido añadido con JQuery -->
-						</ul>	
-					
-					</div>
 					
 					<div class="col-xs-4 seccion">
 					
@@ -142,14 +164,6 @@
 				
 				</div>	
 				
-				<div id="botonera" class="row text-center seccion">
-					
-					<button id="btnAniadir" type="button" class="btn btn-default">Añadir</button>
-					<button id="btnEliminar" type="button" class="btn btn-default">Eliminar</button>
-					<button id="btnEliminarTodos" type="button" class="btn btn-default">Eliminar todas</button>
-					<button id="btnExportar" type="button" class="btn btn-default">Exportar calendario</button>
-			 
-				</div>	
 				
 			</div>
 		
